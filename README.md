@@ -1,4 +1,2 @@
-web-app-template-simple
-=======================
+St. Louis County Municipalities — Current as of November, 2014
 
-A simple web app template with jQuery, and Bootstrap.  | Mizzou Workshop - Oct. 2014
