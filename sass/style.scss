@@ -1,0 +1,73 @@
+
+
+@import "compass/css3";
+
+
+
+
+$red: #cc0000;
+$green: #339900;
+$purple: #cc66cc;
+$orange: #ea8500;
+$blue: #336699;
+$yellow: #ffcc33;
+$grey: #999999;
+$brown: #996633;
+$ltGreen: #99cc33;
+$ltYellow: #ffff66;
+
+.chart {
+  height: 500px;
+}
+
+
+
+#map-container {
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+
+
+.leaflet-overlay-pane {
+    path {
+        fill: $red;
+        fill-opacity: .2;
+        stroke: $red;
+        stroke-width: 2px;
+        stroke-linejoin: "round";
+        stroke-linecap: "round";
+    
+        &.over {
+        	fill-opacity: .7;
+        }
+
+    }
+
+}
+
+
+
+#tt {
+        position: absolute;
+        padding: 8px;
+        background-color: white;
+        z-index: 1001;
+        display: none;
+        @include box-shadow(2px 1px 5px #333333);
+        @include border-radius(2px);
+        line-height: 1.5;
+        
+        .cty-name {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
